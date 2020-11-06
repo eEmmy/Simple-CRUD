@@ -167,8 +167,15 @@ class DB
 
 			// Loop em $whereParams
 			foreach ($whereParams as $key => $value) {
-				// Atualiza o where com a clausula
-				$where .= $value[0] . ' ' . $value[1] . ' ' . $value[2] . ' ';
+				// Verifica o tipo de valor para se comparar
+				if (gettype($value[2]) == 'string') {
+					// Atualiza a clausula where com tipo string
+					$where .= $value[0] . ' ' . $value[1] . ' ' . "\"" . $value[2] . "\"";
+				}
+				else {
+					// Atualiza a clausula where com tipo integer/bool
+					$where .= $value[0] . ' ' . $value[1] . ' ' . $value[2];
+				}
 
 				// Verifica se existe mais alguma condição
 				if (isset($whereParams[$key+1])) {
