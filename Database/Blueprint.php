@@ -80,6 +80,22 @@ class Blueprint
 	}
 
 	/**
+	 * String para um campo de senha.
+	 *
+	 * @param String $name (opcional)
+	 *
+	 * @return String $field
+	 */
+	public function password($name="pass")
+	{
+		// Monta o campo
+		$field = "{$name} CHAR(32) NOT NULL";
+
+		// Retorna o campo $field
+		return $field;
+	}
+
+	/**
 	 * String para um campo de tipo VARCHAR.
 	 *
 	 * @param String $name
