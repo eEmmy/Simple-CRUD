@@ -127,6 +127,42 @@ class Schema
 			return false;
 		}
 	}
+
+	/**
+	 * Exclui uma tabela caso já exista.
+	 *
+	 * @param String $tableName
+	 *
+	 * @return void
+	 */
+	public static function down($tableName)
+	{
+		// Instancia o objeto self::$conn
+		self::init();
+
+		// Verifica se $tableName tem algum conteudo
+		if (empty($tableName)) {
+			// Retorna o erro
+			throw new Exception("Schema::down() - O nome da tabela não pode ser vazio.");
+			
+			return false;
+		}
+
+		// Tenta excluir a tabela
+		try {
+			// Prepara a query
+			$queryPrepare = self::$conn->query("DROP TABLE IF EXISTS {$tableName}");
+
+			// Executa a query
+			$queryPrepare->execute();
+			
+		} catch (Exception $e) {
+			// Retorna o erro
+			throw new Exception("Schema::down() - Ocorreu o seguinte erro: " . $e->getMessage());
+			
+			return false;
+		}
+	}
 }
 
 ?>
