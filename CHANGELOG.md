@@ -1,5 +1,5 @@
 # Changelog
-Mudanças feitas no Simple-CRUD da versão Lifter para Worker.
+Mudanças feitas no Simple-CRUD da versão 1.0.0 para 2.0.0
 
 ## Stable
 ### 2.0.0 - Worker
