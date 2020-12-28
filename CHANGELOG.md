@@ -1,8 +1,8 @@
 # Changelog
-Mudanças feitas no Simple-CRUD da versão 1.0.0 para 2.0.0
+Log de mudanças feitas no Simple-CRUD.
 
 ## Stable
-### 2.0.0 - Worker
+### 2.0.0
 
 #### Adicionado
 * **Schema**:
