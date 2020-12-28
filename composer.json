@@ -1,0 +1,22 @@
+{
+	"name": "eemmy/simple-crud",
+	"description": "Simple PHP PDO CRUD  and table maker.",
+	"license": "GPL-2.0-or-later",
+	"support": {
+		"issues": "https://github.com/eEmmy/Simple-CRUD/issues/",
+		"source": "https://github.com/eEmmy/Simple-CRUD/"
+	},
+	"author": {
+		"name": "Emmy Gomes",
+		"email": "aou-emmy@outlook.com" 
+	},
+	"require": {
+		"php": "^7.2|^8.0"
+	},
+	"version": "2.0.0",
+	"autoload": {
+		"psr-4": {
+			"DB\\": "src/"
+		}
+	}
+}
