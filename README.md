@@ -7,7 +7,7 @@ CRUD MySQL e construtor de tabelas feito em PHP PDO.
 * Composer
 
 ## Instalação
-Inclua ```"simple-crud": "2.0.0"``` no require do seu arquivo *composer.json*
+Inclua ```"eemmy/simple-crud": "2.0.0"``` no require do seu arquivo *composer.json*
 
 ### Notas
 Um gerenciador de migrations não será incluido, ficando a trabalho do utilizador incrementá-lo, isso pode ou não mudar no futuro.
