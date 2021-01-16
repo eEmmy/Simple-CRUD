@@ -11,6 +11,3 @@ Inclua ```"eemmy/simple-crud": "2.0.0"``` no require do seu arquivo *composer.js
 
 ### Notas
 Um gerenciador de migrations não será incluido, ficando a trabalho do utilizador incrementá-lo, isso pode ou não mudar no futuro.
-
-## Autore
-* Emmy Gomes - *responsável por todo o projeto* - [eEmmy](https://github.com/eEmmy/)
